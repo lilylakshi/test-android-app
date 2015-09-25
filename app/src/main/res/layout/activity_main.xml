@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.test.lily.testapp.MainActivity">
+
+    <Button
+        android:id="@+id/openCamereaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_camera_app"
+        android:onClick="openCameraApp" />
+
+    <Button
+        android:id="@+id/showDrowPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_crystal_maiden_wiki_page"
+        android:layout_below="@+id/openCamereaButton"
+        android:onClick="goToCrystalMaidenWiki" />
+
+    <Button
+        android:id="@+id/goToPrefButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_get_preferences"
+        android:layout_below="@+id/showDrowPage"
+        android:onClick="goToPreferencesActivity" />
+
+    <Button
+        android:id="@+id/goToFilesActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_view_files_string"
+        android:layout_below="@+id/goToPrefButton"
+        android:onClick="goToFileHandlingActivity" />
+
+    <Button
+        android:id="@+id/manageDbButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_databases"
+        android:layout_below="@+id/goToFilesActivityButton"
+        android:onClick="goToFileDatabaseActivity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/do_stuff_in_the_background"
+        android:layout_below="@+id/manageDbButton"
+        android:onClick="goToStuffInBackgroundActivity" />
+</RelativeLayout>
